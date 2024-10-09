@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D6124242CB6D93D00FCCA9D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6124232CB6D93D00FCCA9D /* Card.swift */; };
+		1D6124262CB6DBBD00FCCA9D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6124252CB6DBBD00FCCA9D /* CardView.swift */; };
 		1DB5C2632CB5AEAB008F4F9A /* FlashCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5C2622CB5AEAB008F4F9A /* FlashCardsApp.swift */; };
 		1DB5C2652CB5AEAB008F4F9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5C2642CB5AEAB008F4F9A /* ContentView.swift */; };
 		1DB5C2672CB5AEAC008F4F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB5C2662CB5AEAC008F4F9A /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D6124232CB6D93D00FCCA9D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		1D6124252CB6DBBD00FCCA9D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		1DB5C25F2CB5AEAB008F4F9A /* FlashCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB5C2622CB5AEAB008F4F9A /* FlashCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsApp.swift; sourceTree = "<group>"; };
 		1DB5C2642CB5AEAB008F4F9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				1DB5C2622CB5AEAB008F4F9A /* FlashCardsApp.swift */,
+				1D6124252CB6DBBD00FCCA9D /* CardView.swift */,
+				1D6124232CB6D93D00FCCA9D /* Card.swift */,
 				1DB5C2642CB5AEAB008F4F9A /* ContentView.swift */,
 				1DB5C2662CB5AEAC008F4F9A /* Assets.xcassets */,
 				1DB5C2682CB5AEAC008F4F9A /* Preview Content */,
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DB5C2652CB5AEAB008F4F9A /* ContentView.swift in Sources */,
+				1D6124242CB6D93D00FCCA9D /* Card.swift in Sources */,
+				1D6124262CB6DBBD00FCCA9D /* CardView.swift in Sources */,
 				1DB5C2632CB5AEAB008F4F9A /* FlashCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,8 +435,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,8 +462,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
