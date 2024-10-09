@@ -12,18 +12,32 @@ struct CardView: View {
     let card: Card
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero
+    @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
+
     var removal: (() -> Void)? = nil
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
-                .fill(.white)
-                .shadow(radius: 10)
+                .fill(
+                    accessibilityDifferentiateWithoutColor
+                        ? .white
+                        : .white
+                            .opacity(1 - Double(abs(offset.width / 50)))
 
+                )
+                .background(
+                    accessibilityDifferentiateWithoutColor
+                        ? nil
+                        : RoundedRectangle(cornerRadius: 25)
+                            .fill(offset.width > 0 ? .green : .red)
+                )
+                .shadow(radius: 10)
+            
             VStack {
                 Text(card.prompt)
                     .font(.largeTitle)
                     .foregroundStyle(.black)
-
+                
                 if isShowingAnswer {
                     Text(card.answer)
                         .font(.title)
